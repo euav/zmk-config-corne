@@ -71,7 +71,7 @@
 
             bindings = <
 &kp TILDE  &kp EXCL       &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR   &kp RPAR         &kp LEFT_BRACE
-&trans     &sk LGUI       &sk LALT  &kp LCTRL  &kp LSHIFT  &kp TAB      &kp LEFT   &kp DOWN       &kp UP        &kp RIGHT  &kp ENTER        &kp BACKSPACE
+&trans     &sk LGUI       &sk LALT  &sk LCTRL  &sk LSHIFT  &kp TAB      &kp LEFT   &kp DOWN       &kp UP        &kp RIGHT  &kp ENTER        &kp BACKSPACE
 &trans     &kp BACKSLASH  &kp PIPE  &kp PLUS   &kp MINUS   &kp UNDER    &kp EQUAL  &kp END        &kp HOME      &kp DEL    &kp PRINTSCREEN  &kp RIGHT_BRACE
                                     &trans     &trans      &mo 3        &trans     &trans         &trans
             >;
