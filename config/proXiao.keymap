@@ -72,10 +72,10 @@
             //                      | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
 
             bindings = <
-&kp TILDE  &kp EXCL       &kp AT    &kp HASH    &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR   &kp RPAR         &kp LEFT_BRACE
-&trans     &sk LGUI       &sk LALT  &sk LSHIFT  &sk LCTRL   &kp TAB      &kp LEFT   &kp DOWN       &kp UP        &kp RIGHT  &kp ENTER        &kp BACKSPACE
-&trans     &kp BACKSLASH  &kp PIPE  &kp PLUS    &kp MINUS   &kp UNDER    &kp EQUAL  &kp END        &kp HOME      &kp DEL    &kp PRINTSCREEN  &kp RIGHT_BRACE
-                                    &trans      &trans      &trans       &trans     &trans         &trans
+&kp TILDE  &kp EXCL       &kp AT    &kp HASH    &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR         &kp RPAR   &kp LEFT_BRACE
+&trans     &sk LGUI       &sk LALT  &sk LSHIFT  &sk LCTRL   &kp UNDER    &kp LEFT   &kp DOWN       &kp UP        &kp RIGHT        &kp ENTER  &kp BACKSPACE
+&trans     &kp BACKSLASH  &kp PIPE  &kp PLUS    &kp MINUS   &kp EQUAL    &kp TAB    &kp END        &kp HOME      &kp PRINTSCREEN  &kp DEL    &kp RIGHT_BRACE
+                                    &trans      &trans      &trans       &trans     &kp MINUS      &kp PLUS
             >;
 
             label = "spec";
