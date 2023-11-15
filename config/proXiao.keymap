@@ -43,6 +43,8 @@
 &kp LALT   &kp Z  &kp X  &kp C     &kp V      &kp B         &kp N      &kp M      &kp COMMA    &kp DOT  &kp FSLH  &kp RBKT
                          &kp LGUI  &kp LCTRL  &lt 1 LSHIFT  &lt 2 ESC  &kp SPACE  &key_repeat
             >;
+
+            label = "default";
         };
 
         shift_layer {
@@ -56,7 +58,7 @@
 &kp TILDE  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)          &kp LBRC
 &trans     &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)    &kp LS(SEMICOLON)  &kp DOUBLE_QUOTES
 &trans     &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)       &kp RIGHT_BRACE
-                                 &trans     &trans     &trans     &mo 3      &trans     &trans
+                                 &trans     &trans     &trans     &trans     &trans     &trans
             >;
 
             label = "shift";
@@ -70,11 +72,13 @@
             //                      | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
 
             bindings = <
-&kp TILDE  &kp EXCL       &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR   &kp RPAR         &kp LEFT_BRACE
-&trans     &sk LGUI       &sk LALT  &sk LCTRL  &sk LSHIFT  &kp TAB      &kp LEFT   &kp DOWN       &kp UP        &kp RIGHT  &kp ENTER        &kp BACKSPACE
-&trans     &kp BACKSLASH  &kp PIPE  &kp PLUS   &kp MINUS   &kp UNDER    &kp EQUAL  &kp END        &kp HOME      &kp DEL    &kp PRINTSCREEN  &kp RIGHT_BRACE
-                                    &trans     &trans      &mo 3        &trans     &trans         &trans
+&kp TILDE  &kp EXCL       &kp AT    &kp HASH    &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LPAR   &kp RPAR         &kp LEFT_BRACE
+&trans     &sk LGUI       &sk LALT  &sk LSHIFT  &sk LCTRL   &kp TAB      &kp LEFT   &kp DOWN       &kp UP        &kp RIGHT  &kp ENTER        &kp BACKSPACE
+&trans     &kp BACKSLASH  &kp PIPE  &kp PLUS    &kp MINUS   &kp UNDER    &kp EQUAL  &kp END        &kp HOME      &kp DEL    &kp PRINTSCREEN  &kp RIGHT_BRACE
+                                    &trans      &trans      &trans       &trans     &trans         &trans
             >;
+
+            label = "spec";
         };
 
         numbers_layer {
@@ -92,6 +96,15 @@
             >;
 
             label = "num";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        trilayer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
